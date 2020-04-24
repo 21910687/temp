@@ -44,26 +44,26 @@ This document explain how to build your own R package and distribute via Github.
 * First, connect to https://ksublee.dev:8787.
 * File -> New Project
 
-<img src="./create_project.png" width=700>
+<img src="./create_project.png" width="700">
 
 * New Directory.
 
-<img src="./new_project_new_directory.png" width=500>
+<img src="./new_project_new_directory.png" width="500">
 
 * Select R package.
 
-<img src="./create_R_package.png" width=500>
+<img src="./create_R_package.png" width="500">
 
 * Give an appropriate package name and check 'Create a git repository'.
   * My package name is 'mypascal', but yours should be different one.
 * Click 'Create Project'.
 
-<img src="./create_pascal.png" width=500>
+<img src="./create_pascal.png" width="500">
 
 * Now you can see automatically generated default package.
 * In 'R' directory, your source code will be placed.
 
-<img src="./R_directory.png" width=700>
+<img src="./R_directory.png" width="700">
 
 <!-- #region -->
 ### Write code and save
@@ -95,7 +95,7 @@ yourfunction <- function() {
   * You can use any name for the file.
   * My code is based on http://rosettacode.org/wiki/Pascal%27s_triangle#R
   
-<img src="save_source_code.png" width=700>
+<img src="save_source_code.png" width="700">
 
 
 ### Make document and check package
@@ -107,11 +107,11 @@ yourfunction <- function() {
 
 * In Build tab in the right upper section in R studio, you can check the validity of your package.
 
-<img src="./check_package.png" width=500>
+<img src="./check_package.png" width="500">
 
 * You should have no error, if you have, then fix it and rerun check.
 
-<img src="./no_error.png" width=500>
+<img src="./no_error.png" width="500">
 
 
 ### Git commit
@@ -120,11 +120,11 @@ yourfunction <- function() {
 
 * Add updated file and commit in the following order.
 
-<img src="./git_commit.png" width=500>
+<img src="./git_commit.png" width="500">
 
 * Now you can see an window for commit message. Write a summary of what you have done.
 
-<img src="./commit_message.png" width=700>
+<img src="./commit_message.png" width="700">
 
 
 ### Create Github repository
@@ -132,12 +132,12 @@ yourfunction <- function() {
 * Now go to : https://github.com
 * Create empty github repository.
 
-<img src="./github_repo.png" width=700>
+<img src="./github_repo.png" width="700">
 
 * The repository name should be same with your R package name.
   * Instead of ***your_repo_name***, use your R package name.
 
-<img src="./create_github_repo.png" width=700>
+<img src="./create_github_repo.png" width="700">
 
 * If an empty repository is created, then copy the url.
   * It has the form ```https://github.com/username/reponame.git```
@@ -155,31 +155,31 @@ yourfunction <- function() {
   * ```git push origin master```
   * You should use your Github username and password.
 
-<img src="./git_remote_add.png" width=600>
+<img src="./git_remote_add.png" width="600">
 
 * You might encounter errors saying ```cannot run rpostbak=askpass ... ```, but it seems not a big deal.
 * Check your Github repo changed.
 
-<img src="./github_update.png" width=700>
+<img src="./github_update.png" width="700">
 
 
 ### Install your package from Github
 
 * First close your project from Rstudio.
 
-<img src="./close_project.png" width=450>
+<img src="./close_project.png" width="450">
 
 * Open an empty Rscript and run the following code.  
   * In ```devtools::install_github("ksublee/mypascal")```, instead of ***ksublee/mypascal***, use your ***githubusername/reponame***.
   * In ```library(mypascal)```, instead of ***mypascal***, use your R package name.
   * Instead of ```pascalTriangle(5)```, run your example code.
   
-<img src="./test.png" width=700>
+<img src="./test.png" width="700">
 
 * Check help page.
   * You use your package name instead of ***mypascal***.
   * You use your function name instead of ***pascalTriangle***.
   
-<img src="./help.png" width=800>
+<img src="./help.png" width="800">
 
 * If all works fine, you have done well!
